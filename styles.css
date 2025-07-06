@@ -1,0 +1,854 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#FFFFFF, #ffcadb, #FFFFFF);
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.button_menu{
+  display: none;
+}
+
+nav, .menu_navegacao, .menu{
+    display: flex;
+    justify-content: center;
+}
+
+ul, .menu{
+    display: flex;
+    padding: 20px;
+}
+
+li, .menu{
+    padding: 5px 50px;
+    list-style: none;
+    cursor: pointer;
+    font-family: "Merriweather", serif;
+    color: #2F4F4F;
+    text-decoration:underline 2px;
+    font-size: 14px;
+}
+
+li, .menu:hover{
+    color: #F4A261;
+}
+
+.partInfoImg{
+  display: flex;
+  margin: 100px 150px 0px;
+  justify-content: space-between;
+}
+
+.circulo{
+  width: 200px;
+  height: 200px;
+  background: transparent;
+  position: absolute;
+  border: #FFAAC5 solid 4px;
+  border-radius: 50%;
+  z-index: 1;
+  top: 180px;
+  opacity: 50%;
+}
+
+.perfil{
+  width: 20pc;
+  border-radius: 50pc;
+  margin: 100px;
+  border: #F4A261 solid 2px;
+  z-index: 3;
+  position: relative;
+}
+
+.nome{
+  font-family: "Playfair Display", serif;
+  z-index: 2;
+  font-size: 60px;
+  position: absolute;
+  width: 900px;
+}
+
+span{
+  color: #2F4F4F;
+}
+
+
+.fraseSmM{
+  font-style: italic;
+  margin-top: 200px;
+  color: #2F4F4F;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.frase{
+  font-size: 35px;
+}
+
+
+.container_1 {
+  background-color: #9C415E;
+  padding: 30px;
+  width: 100vw; 
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0;/
+}
+
+.titleConteiner{
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  text-decoration: underline solid ;
+  margin: 0px 100px 30px;
+  font-size: 25px;
+  color: #FFFFFF;
+  font-weight: 0;
+}
+
+.resumeSM{
+  font-family: "Merriweather", serif;
+  margin: 0px 100px 30px;
+  font-size: 18px;
+  font-weight:normal; 
+}
+
+.meta{
+  color: #FFFFFF ;
+}
+
+.evolucao{
+  display: flex;
+  justify-content: center;
+  margin: 0px 20px ;
+}
+
+.point{
+  position: relative;
+  width: 50px;
+  height: 80px;
+  margin: 0px 100px;
+}
+
+.line5, .line1, .line3, .line4{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100px;
+  background-color: #7f2f4e; 
+  transform: translateX(-50%);
+}
+
+.circle {
+  position: absolute;
+  top: 80px; 
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #7f2f4e; 
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+
+.text{
+  
+  text-align: center;
+  margin: 80px 20px;
+  width: 200px;
+}
+
+.ano-evolucao{
+  font-family: "Merriweather", serif;
+  margin: 5px;
+  font-size: 17px;
+}
+
+.descricaoEvolucao{
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+  color: #2F4F4F;
+}
+
+.point2{
+  position: relative;
+  width: 50px;
+  height: 80px;
+  margin: 0px 100px;
+}
+
+.line2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 110px;
+  background-color: #F4A261; 
+  transform: translateX(-50%);
+}
+
+.circle2 {
+  position: absolute;
+  top: 100px; 
+  left: 50%;
+  width: 90px;
+  height: 90px;
+  background-color: #F4A261; 
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+
+.text2{
+  text-align: center;
+  margin: 120px 20px;
+  width: 200px;
+}
+
+
+.conhecimentos{
+  justify-content: center;
+  display: flex;
+}
+
+.title_habilidades{
+  margin: 50px auto;
+  font-family: "Merriweather", serif;
+  background: #7f2f4e;
+  padding: 10px 20px;
+  font-size: 30px;
+  color: #ffffff;
+  width: fit-content;
+  text-align: center;
+}
+
+.habilidades_colum {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap:wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.coluna {
+  flex: 1;
+  width: 500px;
+}
+
+.conteudo_principal {
+  margin: 50px 0px 30px;
+}
+
+
+.title_conhecimento{
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.icon_conteudo{
+  margin: 10px 10px;
+}
+
+i {
+  transform: scale(2);
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+
+.barr_habilidades, .barr_habilidades2,.barr_habilidades3,.barr_habilidades4,.barr_habilidades5{
+  display: flex;
+}
+
+.content_barrs,.content_barrs2,.content_barrs3,.content_barrs4,.content_barrs5{
+  display: flex;
+  justify-content: space-between;
+}
+
+.conteudo,.conteudo2, .conteudo3, .conteudo4, .conteudo5{
+  color: #000000;
+  margin: 5px;
+  font-family: "Merriweather", serif;
+
+}
+
+.line_porcentagem,.line_porcentagem2,.line_porcentagem3,.line_porcentagem4,.line_porcentagem5,.line_porcentagem6,.line_porcentagem7,.line_porcentagem8,.line_porcentagem9,.line_porcentagem10,.line_porcentagem11,.line_porcentagem12{
+  width: 100%;
+  height: 2px;
+  background: #7f2f4e;
+  margin-top: 15px;
+  
+}
+
+.line_porcentagem::before {
+    content: "";
+    width: 80%;
+    background-color: #F4A261;
+    height: 2px;
+    display: block;
+}
+
+.line_porcentagem2::before {
+     content: "";
+     width: 85%;
+     background-color: #F4A261;
+     height: 2px;
+     display: block;
+}
+
+.line_porcentagem3::before {
+     content: "";
+     width: 80%;
+     background-color: #F4A261;
+     height: 2px;
+     display: block;
+}
+
+.line_porcentagem4::before {
+     content: "";
+     width: 40%;
+     background-color: #F4A261;
+     height: 2px;
+     display: block;
+}
+
+.line_porcentagem5::before {
+     content: "";
+     width: 40%;
+     background-color: #F4A261;
+     height: 2px;
+     display: block;
+}
+
+.line_porcentagem6::before{
+     content: "";
+     width: 40%;
+     background-color: #F4A261;
+     height: 2px;
+     display: block;
+}
+
+.line_porcentagem7::before{
+     content: "";
+     width: 70%;
+     background-color: #F4A261;
+     height: 2px;
+     display: block;
+}
+
+.line_porcentagem8::before{
+     content: "";
+     width: 60%;
+     background-color: #F4A261;
+     height: 2px;
+     display: block;
+}
+
+.line_porcentagem9::before{
+     content: "";
+     width: 70%;
+     background-color: #F4A261;
+     height: 2px;
+     display: block;
+}
+
+.line_porcentagem10::before{
+     content: "";
+     width: 65%;
+     background-color: #F4A261;
+     height: 2px;
+     display: block;
+}
+
+.line_porcentagem11::before{
+     content: "";
+     width: 70%;
+     background-color: #F4A261;
+     height: 2px;
+     display: block;
+}
+
+.line_porcentagem12::before{
+     content: "";
+     width: 40%;
+     background-color: #F4A261;
+     height: 2px;
+     display: block;
+}
+
+
+.img_photoshop{
+  width: 35px;
+}
+
+.img_mysql{
+  width: 50px;
+}
+
+.img_figma{
+  width: 23px;
+}
+
+.img_pacoteoffice{
+  width: 90px;
+}
+
+.outros_conhecimentos{
+  font-size: 18px;
+  font-family: "Merriweather", serif;
+}
+
+
+.container_3{
+  background-color: #9C415E;
+  padding: 30px;
+  width: 100vw; 
+  max-width: 100vw;
+}
+
+
+.title_container3{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 90px 20px;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+
+.colum_projects{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  flex-direction: column;
+}
+
+.projects_one, .projects_two{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 2px 0px 50px 0px;
+}
+
+.projects_one_text, .projects_two_text{
+  width: 400px;
+}
+
+.text_title{
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.descricao_projects{
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+}
+
+.descricao_tecno{
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: #F4A261;
+}
+
+.tecnologias_projects{
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+}
+
+a{
+  color: #FFFFFF;
+}
+
+.informacoes-extras{
+  background: linear-gradient( #9C415E, #9C415E,#c55c7d, #ce7390,#ec8baa,#ffa5c2, #FFFFFF);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw; 
+  max-width: 100vw;
+}
+
+.title_aside{
+  Font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #ffffff;
+  margin: 20px;
+  text-decoration: underline;
+}
+
+.curiosidades, .hobbies{
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Merriweather", serif;
+
+}
+
+.footer_contatos{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_footer{
+  margin: 80px 0px 20px 0px;
+}
+
+.contato, .informativos_contato, .direitos, .contato_email{
+  Font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: #000000;
+}
+
+li, a .github-link,.linkedin-link, .instagram-link{
+  color: #000000;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+
+  .frase {
+    font-size: 30px;
+  }
+
+  .container_1 {
+    width: 100vw;
+    padding: 20px;
+  }
+
+  .evolucao {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .point, .point2 {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+  }
+
+  .line1, .line5, .line3, .line4, .line2 {
+    height: 100px;
+    width: 4px;
+    background-color: #7f2f4e;
+  }
+
+
+  .circle2,.circle {
+    top:0px;
+    width: 30px;
+    height: 30px;
+    background: #7f2f4e;
+  }
+
+  .text, .text2 {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    background-color: #7f2f4e;
+    padding: 20px;
+    border-radius: 30px;
+
+  }
+
+  .ano-evolucao {
+    font-size: 15px;
+    color: #F4A261;
+  }
+
+  .descricaoEvolucao {
+    font-size: 13px;
+    color: #FFFFFF;
+  }
+
+}
+
+/* Tablets em pé e celulares grandes */
+@media (max-width: 768px) {
+  .partInfoImg{
+  display: flex;
+  margin: 60px 150px 0px;
+  justify-content: space-between;
+}
+
+.circulo{
+  width: 150px;
+  height: 150px;
+  top: auto;
+}
+
+.perfil{
+  width: 15pc;
+  margin: 50px 0px 30px 80px;
+  border: #F4A261 solid 2px;
+  
+}
+
+.nome{
+  
+  z-index: 2;
+  font-size: 40px;
+  position: absolute;
+  width: 500px;
+}
+
+
+.fraseSmM{
+  margin-top: 100px;
+  width: 100px;
+}
+
+.frase{
+  font-size: 17px;
+}
+}
+
+ /* Celulares médios e pequenos */
+@media (max-width: 480px) {
+  .button_menu {
+    display: flex;
+    background: transparent;
+    border: none;
+    justify-content: flex-end; /* para alinhar o botão à direita */
+    padding: 20px;
+
+  }
+
+  .menu_navegacao {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none; 
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #FFFFFF, #ffcbdb, rgba(255, 203, 219, 0));
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  z-index: 10;
+}
+
+.menu{
+  font-size: 12px;
+  padding: 2px;
+}
+
+.menu_navegacao.ativo {
+  opacity: 1;
+  max-height: 300px;
+  pointer-events: all;
+}
+
+.partInfoImg{
+  display: flex;
+  flex-direction: column;
+  margin: 80px 50px 0px;
+  justify-content: center;
+}
+
+.circulo{
+  width: 150px;
+  height: 150px;
+  top: auto;
+}
+
+.perfil{
+  width: 12pc;
+  margin: 40px 2px 0px 80px;
+}
+
+.nome{
+  font-size: 30px;
+  width: 350px;
+}
+
+
+.fraseSmM{
+  margin: 5px 40px 40px 0px;
+  width: 350px;
+  justify-content: center;
+}
+
+.frase{
+  font-size: 17px;
+}
+
+.titleConteiner{
+  margin: 0px 50px 20px;
+  font-size: 20px;
+  
+}
+
+.resumeSM{
+  margin: 0px 50px 20px;
+  font-size: 15px; 
+}
+
+.title_habilidades{
+  font-size: 25px;
+}
+
+
+.coluna {
+  flex: 1;
+  width: 300px;
+}
+
+
+.title_conhecimento{
+  font-size: 18px;
+
+}
+
+.colum_projects{
+  display: flex;
+  align-items: center;
+}
+
+.projects_one, .projects_two{
+  flex-direction: column;
+  
+}
+
+.projects_one_text, .projects_two_text{
+  width: 350px;
+
+}
+
+.text_title{
+  margin: 2px;
+  font-size: 18px;
+  
+}
+
+.descricao_projects{
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+}
+
+.tecnologias_projects{
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+}
+
+.gif_projects{
+  margin: 2px;
+}
+
+
+.informacoes-extras ul {
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+
+
+.contato, .informativos_contato, .direitos, .contato_email{
+  font-size: 15px;
+  
+}
+
+}
+
+@media (max-width: 375px) {
+  
+.menu_navegacao li{
+  font-size: 12px;
+  padding: 20px;
+}
+
+.partInfoImg{
+  margin: 110px 40px 0px;
+  
+}
+
+.circulo{
+  width: 100px;
+  height: 100px;
+  
+}
+
+.perfil{
+  width: 12pc;
+  margin: 40px 2px 0px 50px;
+}
+
+.nome{
+  font-size: 25px;
+  width: 300px;
+}
+
+.fraseSmM{
+  margin: 5px 40px 40px 0px;
+  width: 280px;
+  justify-content: center;
+}
+
+.frase{
+  font-size: 17px;
+}
+
+
+.colum_projects{
+  display: flex;
+  align-items: center;
+}
+
+.projects_one, .projects_two{
+  flex-direction: column;
+  
+}
+
+.projects_one_text, .projects_two_text{
+  width: 300px;
+
+}
+
+.gif_projects{
+  margin: 20px;
+  width: 300px;
+}
+
+.title_aside{
+  font-size: 18px;
+}
+
+.curiosidades, .hobbies, .footer_contatos{
+  font-size: 15px;
+}
+
+
+
+.contato, .informativos_contato, .direitos, .contato_email{
+  font-size: 12px;
+
+}
+}
