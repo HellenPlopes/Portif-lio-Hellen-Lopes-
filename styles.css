@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-
+@media screen {
+  
 * {
   margin: 0;
   padding: 0;
@@ -10,26 +11,28 @@
 
 body {
   background: linear-gradient(#FFFFFF, #ffcadb, #FFFFFF);
-  min-height: 100vh;
-  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .button_menu{
   display: none;
+  
 }
 
 nav, .menu_navegacao, .menu{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
 
 ul, .menu{
     display: flex;
-    padding: 20px;
 }
 
 li, .menu{
     padding: 5px 50px;
+    margin: 2px;
     list-style: none;
     cursor: pointer;
     font-family: "Merriweather", serif;
@@ -62,6 +65,7 @@ li, .menu:hover{
 
 .perfil{
   width: 20pc;
+  max-width: max-content;
   border-radius: 50pc;
   margin: 100px;
   border: #F4A261 solid 2px;
@@ -74,7 +78,7 @@ li, .menu:hover{
   z-index: 2;
   font-size: 60px;
   position: absolute;
-  width: 900px;
+  max-width: 100%;
 }
 
 span{
@@ -94,6 +98,9 @@ span{
   font-size: 35px;
 }
 
+.informSM{
+  max-width: min-content;
+}
 
 .container_1 {
   background-color: #9C415E;
@@ -131,6 +138,7 @@ span{
   justify-content: center;
   margin: 0px 20px ;
 }
+
 
 .point{
   position: relative;
@@ -526,21 +534,64 @@ li, a .github-link,.linkedin-link, .instagram-link{
   text-decoration: none;
 }
 
-@media (max-width: 1024px) {
+}
+
+@media (max-width: 1130px) {
+  .evolucao {
+  display: flex;
+  flex-wrap: wrap;          
+  justify-content: center;  
+  gap: 2rem;                 
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.evolucao > div {
+  flex: 1 1 250px;       
+  max-width: 300px;      
+  min-width: 200px;      
+}
+
+.line2, .line4{
+  display: none;
+}
+
+.circle2 {
+  top: 50px;
+}
+
+.text2{
+  margin: 80px 20px;
+
+} 
+}
+
+@media (max-width:1024px){
+  .partInfoImg{
+    flex-direction: column;
+}
 
   .frase {
-    font-size: 30px;
+    font-size: 20px;
   }
 
-  .container_1 {
-    width: 100vw;
-    padding: 20px;
-  }
+
+.fraseSmM{
+  font-style: italic;
+  margin-top: 20px;
+  color: #2F4F4F;
+  margin: 0px 0px 100px 0px;
+}
+
+.frase{
+  font-size: 35px;
+}
 
   .evolucao {
     flex-direction: column;
     align-items: center;
     gap: 60px;
+
   }
 
   .point, .point2 {
@@ -557,6 +608,7 @@ li, a .github-link,.linkedin-link, .instagram-link{
     height: 100px;
     width: 4px;
     background-color: #7f2f4e;
+    display: inline;
   }
 
 
@@ -569,7 +621,7 @@ li, a .github-link,.linkedin-link, .instagram-link{
 
   .text, .text2 {
     text-align: center;
-    width: 90%;
+    width: 100%;
     margin: 0 auto 0 auto;
     background-color: #7f2f4e;
     padding: 20px;
@@ -583,55 +635,13 @@ li, a .github-link,.linkedin-link, .instagram-link{
   }
 
   .descricaoEvolucao {
-    font-size: 13px;
+    font-size: 16px;
     color: #FFFFFF;
   }
-
 }
 
-/* Tablets em pé e celulares grandes */
-@media (max-width: 768px) {
-  .partInfoImg{
-  display: flex;
-  margin: 60px 150px 0px;
-  justify-content: space-between;
-}
-
-.circulo{
-  width: 150px;
-  height: 150px;
-  top: auto;
-}
-
-.perfil{
-  width: 15pc;
-  margin: 50px 0px 30px 80px;
-  border: #F4A261 solid 2px;
-  
-}
-
-.nome{
-  
-  z-index: 2;
-  font-size: 40px;
-  position: absolute;
-  width: 500px;
-}
-
-
-.fraseSmM{
-  margin-top: 100px;
-  width: 100px;
-}
-
-.frase{
-  font-size: 17px;
-}
-}
-
- /* Celulares médios e pequenos */
-@media (max-width: 480px) {
-  .button_menu {
+@media (max-width:830px) {
+   .button_menu {
     display: flex;
     background: transparent;
     border: none;
@@ -669,7 +679,7 @@ li, a .github-link,.linkedin-link, .instagram-link{
 .partInfoImg{
   display: flex;
   flex-direction: column;
-  margin: 80px 50px 0px;
+  align-items: center;
   justify-content: center;
 }
 
@@ -680,24 +690,21 @@ li, a .github-link,.linkedin-link, .instagram-link{
 }
 
 .perfil{
-  width: 12pc;
-  margin: 40px 2px 0px 80px;
+  width: 18pc;
+  margin: 50px 100px 10px;
 }
 
 .nome{
-  font-size: 30px;
-  width: 350px;
+  font-size: 40px;
 }
 
 
 .fraseSmM{
-  margin: 5px 40px 40px 0px;
-  width: 350px;
-  justify-content: center;
+  margin: 0px 0px 20px 0px;
 }
 
 .frase{
-  font-size: 17px;
+  font-size: 22px;
 }
 
 .titleConteiner{
@@ -711,21 +718,7 @@ li, a .github-link,.linkedin-link, .instagram-link{
   font-size: 15px; 
 }
 
-.title_habilidades{
-  font-size: 25px;
-}
 
-
-.coluna {
-  flex: 1;
-  width: 300px;
-}
-
-
-.title_conhecimento{
-  font-size: 18px;
-
-}
 
 .colum_projects{
   display: flex;
@@ -738,7 +731,7 @@ li, a .github-link,.linkedin-link, .instagram-link{
 }
 
 .projects_one_text, .projects_two_text{
-  width: 350px;
+  width: 480px;
 
 }
 
@@ -776,6 +769,91 @@ li, a .github-link,.linkedin-link, .instagram-link{
   
 }
 
+
+}
+
+@media(max-width:550px){
+  .perfil{
+  width: 15pc;
+}
+
+.nome{
+  font-size: 30px;
+}
+
+
+.frase{
+  font-size: 18px;
+}
+
+.title_habilidades{
+  font-size: 25px;
+}
+
+
+.coluna {
+  flex: 1;
+  width: 300px;
+}
+
+
+.title_conhecimento{
+  font-size: 18px;
+
+}
+.colum_projects{
+  display: flex;
+  align-items: center;
+}
+
+.projects_one, .projects_two{
+  flex-direction: column;
+  
+}
+
+.projects_one_text, .projects_two_text{
+  width: 350px;
+
+}
+
+.text_title{
+  margin: 2px;
+  font-size: 18px;
+  
+}
+
+.descricao_projects{
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+}
+
+.tecnologias_projects{
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+}
+
+.gif_projects{
+  margin: 2px;
+}
+}
+
+@media(max-width:450px){
+.perfil{
+  width: 15pc;
+  margin: 50px 50px 10px;
+
+}
+
+.nome{
+  font-size: 30px;
+}
+
+
+.frase{
+  font-size: 18px;
+  width: 300px;
+}
+
 }
 
 @media (max-width: 375px) {
@@ -785,31 +863,13 @@ li, a .github-link,.linkedin-link, .instagram-link{
   padding: 20px;
 }
 
-.partInfoImg{
-  margin: 110px 40px 0px;
-  
-}
-
-.circulo{
-  width: 100px;
-  height: 100px;
-  
-}
 
 .perfil{
-  width: 12pc;
-  margin: 40px 2px 0px 50px;
+  margin:  50px 10px 10px;
 }
 
 .nome{
   font-size: 25px;
-  width: 300px;
-}
-
-.fraseSmM{
-  margin: 5px 40px 40px 0px;
-  width: 280px;
-  justify-content: center;
 }
 
 .frase{
